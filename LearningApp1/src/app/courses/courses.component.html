@@ -1,0 +1,16 @@
+<div class="CourseSection">
+    <h2>
+        {{ title }}
+    </h2>
+
+    <div class="CourseList">
+        @for (course1 of courseList; track course1.id) {
+        <div class="course_item">
+            <h2>{{ course1.name }}</h2>
+            <p>Learn the {{ course1.description }}</p>
+            <h4>{{ course1.price }}</h4>
+        </div>
+            }
+    
+    </div>
+</div>
