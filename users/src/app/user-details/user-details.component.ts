@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { user } from './usersModel';
 import { UsersService } from './users.service';
-import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-user-details',
-  imports: [HttpClientModule],
+  imports: [CommonModule],
   standalone: true,
   templateUrl: './user-details.component.html',
   styleUrl: './user-details.component.css',
