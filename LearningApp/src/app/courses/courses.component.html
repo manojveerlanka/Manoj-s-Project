@@ -1,0 +1,15 @@
+<div class="CourseSection">
+    <h2>
+        {{ title }}
+    </h2>
+
+    <div class="CourseList">
+        @for (course1 of courseList; track $index){
+        <div class="course_item">
+            <h2>{{ course1 }}</h2>
+            <p>Learn the {{ course1 }}</p>
+        </div>
+            }
+    
+    </div>
+</div>
